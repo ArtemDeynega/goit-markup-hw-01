@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="site-nav">
         <a href="./index.html"> WebStudio</a>
         <ul>
           <li><a href="">Студия</a></li>
@@ -63,9 +63,15 @@
         <h2>Чем мы занимаемся</h2>
         <h3 hidden>Примеры работ</h3>
         <ul>
-          <li><img src="./image/img1.jpg" alt="фото" width="370" /></li>
-          <li><img src="./image/img2.jpg" alt="фото" width="370" /></li>
-          <li><img src="./image/img3.jpg" alt="фото" width="370" /></li>
+          <li>
+            <img src="./image/img2.jpg" alt="фото" width="370" height="294" />
+          </li>
+          <li>
+            <img src="./image/img1.jpg" alt="фото" width="370" height="294" />
+          </li>
+          <li>
+            <img src="./image/img3.jpg" alt="фото" width="370" height="294" />
+          </li>
         </ul>
       </section>
       <!-- Команда -->
@@ -73,22 +79,42 @@
         <h2>Наша Команда</h2>
         <ul>
           <li>
-            <img src="./image/teamcard1.jpg" alt="фото человека" width="270" />
+            <img
+              src="./image/teamcard1.jpg"
+              alt="фото человека"
+              width="270"
+              height="260"
+            />
             <h3>Игорь Демьяненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
-            <img src="./image/teamcard2.jpg" alt="фото человека" width="270" />
+            <img
+              src="./image/teamcard2.jpg"
+              alt="фото человека"
+              width="270"
+              height="260"
+            />
             <h3>Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
-            <img src="./image/teamcard3.jpg" alt="фото человека" width="270" />
+            <img
+              src="./image/teamcard3.jpg"
+              alt="фото человека"
+              width="270"
+              height="260"
+            />
             <h3>Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
-            <img src="./image/teamcard4.jpg" alt="фото человека" width="270" />
+            <img
+              src="./image/teamcard4.jpg"
+              alt="фото человека"
+              width="270"
+              height="260"
+            />
             <h3>Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
@@ -109,5 +135,120 @@
         <a href="tel:+380991111111">+38 099 111 11 11</a>
       </address>
     </footer>
+    <p class="alert success">Пополнение счёта выполнено</p>
+    <p class="alert warning">Внимание, будут изменены тарифы</p>
+    <p class="alert error">Ошибка проведения транзакции</p>
+
+    <ul class="menu">
+      <li>
+        Комьютеры и комплектующие
+        <ul class="submenu">
+          <li>Процессоры</li>
+          <li>Мониторы</li>
+          <li>Видеокарты</li>
+        </ul>
+      </li>
+      <li>
+        Бытовая техника
+        <ul class="submenu">
+          <li>Холодильники</li>
+          <li>Телевизоры</li>
+          <li>Стиральные машины</li>
+        </ul>
+      </li>
+      <li>
+        Товары для дома
+        <ul class="submenu">
+          <li>Кресла</li>
+          <li>Матрасы</li>
+          <li>Электрокамины</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="social-links">
+      <li><a class="link" href="https://twitter.com">Twitter</a></li>
+      <li><a class="link" href="https://www.instagram.com">Instagram</a></li>
+      <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
+    </ul>
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th>Номер</th>
+          <th>Маршрут</th>
+          <th>Время в пути</th>
+        </tr>
+      </thead>
+
+      <tbody class="schedule-body">
+        <tr>
+          <td>433</td>
+          <td>Киев - Ковель</td>
+          <td>5 часов</td>
+        </tr>
+        <tr>
+          <td>701</td>
+          <td>Харьков - Днепр</td>
+          <td>7 часов</td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>Львов - Одесса</td>
+          <td>4 часа</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      commodi, veritatis nihil alias iste odit similique sit eius optio veniam,
+      impedit cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+
+    <!-- Селекторы отношений по родству. Любой потомок. -->
+
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link">Меню 1</a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Меню 2 ▼</a>
+        <ul class="sub-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">Sub Меню 1</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Sub Меню 2 ▼</a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Sub Меню 1</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Sub Меню 2</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Sub Меню 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Sub Меню 3</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Sub Меню 4</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Меню 3</a>
+      </li>
+    </ul>
+
+    <h2>h. s. lightness</h2>
+    <div class="lightness lightness-100">100%</div>
+    <div class="lightness lightness-75">75%</div>
+    <div class="lightness lightness-50">50%</div>
+    <div class="lightness lightness-25">25%</div>
+    <div class="lightness lightness-0">0</div>
   </body>
 </html>
