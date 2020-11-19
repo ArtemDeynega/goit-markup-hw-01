@@ -1,146 +1,60 @@
-body {
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* цвет фона #FFFF */
+/* вторичный цвет фона #F5F4FA */
+
+
+
+:root {
+      --primary-text-color: #212121;
+      --title-text-color: #757575;
+      --accent-color: #2196F3;
+      --primary-white-color: #FFFF;
+      --secondary-background-color: #F5F4FA;
+
+}
+.body {
       font-family: sans-serif;
       font-size: 20px;
+      background-color: var(--primary-white-color);
+      color: var(--primary-text-color);
 }
 
-.alert {
-      font-size: 24px;
-      font-weight: 500;
-}
-
-.success {
-      color: green;
-}
-
-.warning { 
-      color: orange;
-}
-
-.error {
-      color: red;
-}
-.menu>li {
-      border: 1px solid tomato;
-}
-
-.social-links .link {
-      color: teal;
-}
-
-.social-links .link:hover,
-.social-links .link:focus {
-      color: blueviolet;
-}
-
-.social-links .link:active {
-      color: red;
-}
-.social-links .link:visited {
-      color: black
-}
-
-.schedule-body>tr:hover {
-      background-color: tomato;
-      color: white;
-}
-.schedule {
-      border-collapse: collapse;
-
-}
-.schedule th,
-.schedule td {
-      padding: 8px;
-      border: 1px solid #212121;
-}
-
-body {
-      font-family: sans-serif;
-}
-
-.text {
-      color: red;
-      background-color: rgba(0,0,0, 75%);
-}
-
-/* Селекторы отношений по родству. Любой потомок  */
 
 ul {
-      padding: 0;
       list-style: none;
 }
-
-.menu>.menu-item {
-      display: inline-block;
-      vertical-align: top;
-      opacity: 1;
+/* logo */
+.logo{
+      color:var(--primary-text-color);
 }
-
- .sub-menu .menu-item {
-      opacity: 0;
-      margin-left: 100px;
-}
-
- .menu-item:hover .menu-item {
-      opacity: 1;
-      
+.logo-accent {
+      color:var(--accent-color);
 }
 
 
-.lightness {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      margin: 0.5rem;
-      text-align: center;
-      border: 1px solid gold;
+/* Header */
+.site-nav .link {
+      color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+      color:var(--accent-color);
+}
+.contacts .contacts-link {
+      color: var(--primary-text-color);
 }
 
-.lightness-100 {
-      background-color: hsl(0, 100%, 100%);
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+      color: var(--accent-color);
 }
 
-.lightness-75 {
-      background-color: hsl(0, 100%, 75%);
+
+/* Section */
+.section-title {
+      color:var(--primary-text-color);
 }
 
-.lightness-50 {
-      background-color: hsl(0, 100%, 50%);
-}
-
-.lightness-25 {
-      background-color: hsl(50, 100%, 25%);
-}
-
-.lightness-0 {
-      background-color: hsl(0, 100%, 100%);
-}
-
-.container {
-      padding: 1rem;
-      background-color: navy;
-}
-
-.box {
-      width: 200px;
-      height: 50px;
-      margin: 1rem auto;
-      color: #fff;
-      font-size: 24px;
-      line-height: 50px;
-      text-align: center;
-      cursor: pointer;
-      background-color: orchid;
-      border: 4px solid gold;
-}
-
-.opacity {
-      opacity: .5;
-}
-
-.opacity:hover,
-.opacity:focus {
-      opacity
-}
-
-.transparent:hover,
-.transparent:focus {}
+/* Botton */
